@@ -21,8 +21,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/Ladicle/go-org/org"
 	"github.com/gohugoio/hugo/common/herrors"
-	"github.com/niklasfasching/go-org/org"
 
 	"github.com/BurntSushi/toml"
 	"github.com/pkg/errors"
