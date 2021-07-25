@@ -145,6 +145,10 @@ LOOP:
 	}
 
 	l.emit(TypeFrontMatterORG)
+	// do not skip org metadata
+	l.pos = 0
+	l.start = 0
+	l.width = 0
 
 	return lexMainSection
 }
