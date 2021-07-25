@@ -62,7 +62,8 @@ func ParseFrontMatterAndContent(r io.Reader) (ContentFrontMatter, error) {
 
 	walkFn := func(item Item) bool {
 		if frontMatterSource != nil {
-			cf.Content = psr.Input()
+			// The rest is content.
+			cf.Content = psr.Input()[item.Pos:]
 			// Done
 			return false
 		} else if item.IsFrontMatter() {
