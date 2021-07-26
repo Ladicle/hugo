@@ -21,7 +21,6 @@ import (
 
 	"github.com/Ladicle/go-org/org"
 	"github.com/gohugoio/hugo/markup/converter"
-	"github.com/spf13/afero"
 )
 
 // Provider is the package entry point.
@@ -48,9 +47,6 @@ func (c *orgConverter) Convert(ctx converter.RenderContext) (converter.Result, e
 	logger := c.cfg.Logger
 	config := org.New()
 	config.Log = logger.Warn()
-	config.ReadFile = func(filename string) ([]byte, error) {
-		return afero.ReadFile(c.cfg.ContentFs, filename)
-	}
 	writer := org.NewHTMLWriter()
 	writer.HighlightCodeBlock = func(source, lang string, inline bool) string {
 		highlightedSource, err := c.cfg.Highlight(source, lang, "")
