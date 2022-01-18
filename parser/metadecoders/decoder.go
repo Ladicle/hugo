@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/gohugoio/hugo/common/herrors"
-	"github.com/niklasfasching/go-org/org"
+	"github.com/Ladicle/go-org/org"
 
 	xml "github.com/clbanning/mxj/v2"
 	toml "github.com/pelletier/go-toml/v2"
