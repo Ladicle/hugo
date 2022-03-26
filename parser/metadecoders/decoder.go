@@ -21,8 +21,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gohugoio/hugo/common/herrors"
 	"github.com/Ladicle/go-org/org"
+	"github.com/gohugoio/hugo/common/herrors"
 
 	xml "github.com/clbanning/mxj/v2"
 	toml "github.com/pelletier/go-toml/v2"

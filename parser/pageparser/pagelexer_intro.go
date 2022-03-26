@@ -30,7 +30,7 @@ LOOP:
 			return l.lexFrontMatterSection(TypeFrontMatterYAML, r, "YAML", delimYAML)
 		case r == '{':
 			return lexFrontMatterJSON
-		case r == '#':
+		case r == '#' || r == ':': // e.g. ':PROPERTIES:' for org-roam
 			return lexFrontMatterOrgMode
 		case r == byteOrderMark:
 			l.emit(TypeIgnore)
@@ -123,11 +123,8 @@ func lexFrontMatterOrgMode(l *pageLexer) stateFunc {
 
 	l.backup()
 
-	if !l.hasPrefix(delimOrg) {
-		return lexMainSection
-	}
-
 	// Read lines until we no longer see a #+ prefix
+	var start bool
 LOOP:
 	for {
 
@@ -135,7 +132,9 @@ LOOP:
 
 		switch {
 		case r == '\n':
-			if !l.hasPrefix(delimOrg) {
+			if l.hasPrefix(delimOrg) {
+				start = true
+			} else if start {
 				break LOOP
 			}
 		case r == eof:
