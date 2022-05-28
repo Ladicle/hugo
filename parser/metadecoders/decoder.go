@@ -243,9 +243,9 @@ func (d Decoder) unmarshalORG(data []byte, v interface{}) error {
 		if strings.HasSuffix(k, "[]") {
 			frontMatter[k[:len(k)-2]] = strings.Fields(v)
 		} else if k == "tags" || k == "categories" || k == "aliases" {
-			jww.WARN.Printf("Please use '#+%s[]:' notation, automatic conversion is removed.", k)
+			// noop
 		} else if k == "filetags" {
-			frontMatter[k] = strings.Fields(strings.ReplaceAll(v, ":", " "))
+			frontMatter["tags"] = strings.Split(strings.TrimPrefix(strings.TrimSuffix(v, ":"), ":"), ":")
 		} else if k == "date" || k == "lastmod" || k == "publishDate" || k == "expiryDate" {
 			frontMatter[k] = parseORGDate(v)
 		} else {
