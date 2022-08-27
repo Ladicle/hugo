@@ -2,10 +2,10 @@ module github.com/gohugoio/hugo
 
 require (
 	github.com/BurntSushi/locker v0.0.0-20171006230638-a6e239ea1c69
-	github.com/Ladicle/go-org v1.15.1-0z20
+	github.com/Ladicle/go-org v1.15.1-0z21
 	github.com/PuerkitoBio/purell v1.1.1
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
-	github.com/alecthomas/chroma v0.9.4
+	github.com/alecthomas/chroma v0.10.0
 	github.com/armon/go-radix v1.0.0
 	github.com/aws/aws-sdk-go v1.41.14
 	github.com/bep/debounce v1.2.0
@@ -17,6 +17,7 @@ require (
 	github.com/clbanning/mxj/v2 v2.5.5
 	github.com/cli/safeexec v1.0.0
 	github.com/disintegration/gift v1.2.1
+	github.com/dlclark/regexp2 v1.7.0 // indirect
 	github.com/dustin/go-humanize v1.0.0
 	github.com/evanw/esbuild v0.14.11
 	github.com/fortytw2/leaktest v1.3.0
@@ -37,6 +38,7 @@ require (
 	github.com/kyokomi/emoji/v2 v2.2.8
 	github.com/magefile/mage v1.11.0
 	github.com/mattn/go-isatty v0.0.14
+	github.com/mattn/go-sqlite3 v1.14.15 // indirect
 	github.com/mitchellh/hashstructure v1.1.0
 	github.com/mitchellh/mapstructure v1.4.3
 	github.com/muesli/smartcrop v0.3.0
@@ -60,7 +62,7 @@ require (
 	github.com/yuin/goldmark-highlighting v0.0.0-20200307114337-60d527fdb691
 	gocloud.dev v0.20.0
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410
-	golang.org/x/net v0.0.0-20210614182718-04defd469f4e
+	golang.org/x/net v0.0.0-20220826154423-83b083e8dc8b
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/text v0.3.7
 	google.golang.org/api v0.61.0
