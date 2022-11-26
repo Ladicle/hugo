@@ -101,6 +101,8 @@ github.com/GeertJohan/go.rice v1.0.0/go.mod h1:eH6gbSOAUv07dQuZVnBmoDP8mgsM1rtix
 github.com/GoogleCloudPlatform/cloudsql-proxy v0.0.0-20191009163259-e802c2cb94ae/go.mod h1:mjwGPas4yKduTyubHvD1Atl9r1rUq8DfVy+gkVvZ+oo=
 github.com/Ladicle/go-org v1.15.1-0z23 h1:grp8sWNnLBpKsiTcy9j/LBle94qJxDzWhtnKlYuGNJE=
 github.com/Ladicle/go-org v1.15.1-0z23/go.mod h1:muC2ccB9EDj9h4PYl82G1facVVS/rHJwh7fLV1tLu88=
+github.com/Ladicle/go-org v1.15.1-0z24 h1:HVPsFlIv3Ta8SreV+zFpOKwShqSP0zJNTyHMPwDOURw=
+github.com/Ladicle/go-org v1.15.1-0z24/go.mod h1:muC2ccB9EDj9h4PYl82G1facVVS/rHJwh7fLV1tLu88=
 github.com/OneOfOne/xxhash v1.2.2 h1:KMrpdQIwFcEqXDklaen+P1axHaj9BSKzvpUUfnHldSE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
 github.com/PuerkitoBio/purell v1.1.1 h1:WEQqlqaGbrPkxLJWfBwQmfEAE1Z7ONdDLqrN38tNFfI=
